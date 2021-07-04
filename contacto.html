@@ -11,62 +11,93 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/index.css">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-    <title>Freyja Indumentaria - Preguntas frecuentes</title>
+    <title>Freyja Indumentaria - Preguntas </title>
 </head>
 
 <body>
-
-   <!--Header-->
-   <header>     
-    <nav class="navbar navbar-expand-lg navbar-light barra-navegacion">
-        <div class="container-fluid">
-            <a href="../index.html"><img src="../Imagenes/logoPrincipal.png" style="margin-left: 2%; border-radius: 5%;" width="120" height="65" class="d-inline-block align-text-top"></a>
-            <label id="letras-logo">Freyja <br> Indumentaria</label>
-           <!-- Logo de pagina -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse lista-menu" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Lo nuevo</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Catálogo
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Blusas y Tops</a></li>
-                  <li><a class="dropdown-item" href="#">Calzado</a></li>
-                  <li><a class="dropdown-item" href="#">Remeras</a></li>
-                  <li><a class="dropdown-item" href="#">Jeans</a></li>
+     <!--Header-->
+     <header>     
+        <nav class="navbar navbar-expand-lg navbar-light barra-navegacion">
+            <div class="container-fluid">
+                <a href="../index.html"><img src="../Imagenes/logoPrincipal.png" style="margin-left: 2%; border-radius: 5%;" width="120" height="65" class="d-inline-block align-text-top"></a>
+                <label id="letras-logo">Freyja <br> Indumentaria</label>
+               <!-- Logo de pagina -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse lista-menu" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Lo nuevo</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Catálogo
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="/subpaginas/Blusas.html">Blusas y Tops</a></li>
+                      <li><a class="dropdown-item" href="/subpaginas/Calzados.html">Calzado</a></li>
+                      <li><a class="dropdown-item" href="/subpaginas/Remeras.html">Remeras</a></li>
+                      <li><a class="dropdown-item" href="/subpaginas/Pantalones.html">Jeans</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="preguntas.html">Preguntas frecuentes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Preguntas frecuentes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-            </ul>
-          </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <!--Fin de header-->
+    
+    <!--Formulario de contacto-->
+    <br><br><div class="row ps-5" >
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h3><b>Formulario de contacto</b></h3>
+            <div class="formulario bg-dark">
+            <form id="formulario-contacto">
+              <!-- input nombre -->
+              <div class="form-outline mb-4">
+                <input type="text" id="form4Example1" class="form-control" placeholder="Nombre"/>
+                <label class="form-label" for="form4Example1">
+              </div>
+            
+              <!-- input Email -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form4Example2" class="form-control" placeholder="Email"/>
+                <label class="form-label" for="form4Example2">
+              </div>
+            
+              <!-- input mensaje -->
+              <div class="form-outline mb-4">
+                <textarea class="form-control" id="form4Example3" rows="4" placeholder="Ingrese su mensaje aquí"></textarea>
+                <label class="form-label" for="form4Example3">
+              </div>
+                     
+            
+              <!-- botones enviar y borrar -->
+              <button type="submit" id="btn-enviar" class="btn btn-primary btn-block mb-4">Enviar</button>
+              <button type="reset" id="btn-reset" class="btn btn-primary btn-block mb-4" onclick="alert('Se borraron los campos del formulario')">Borrar</button>
+            </form>  
+            </div>
         </div>
-    </nav>
-</header>
-<!--Fin de header-->
-
-
-
-
-
-
-
-
-
-</body>
+        <div class="col-12 col-md-6">
+          <h3><b>Ubicación de entregas</b></h3> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3334.638030103568!2d-66.33911363424431!3d-33.302131497302696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d439543c5626fd%3A0x2db156e2f81d99f9!2sPlaza%20Pringles%2C%20San%20Luis!5e0!3m2!1ses-419!2sar!4v1625438343575!5m2!1ses-419!2sar" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!--Fin formulario de contacto-->
 
     <!--Footer-->
     <footer>
@@ -77,7 +108,7 @@
             </div>
             <div class="col-md-12 py-2">
               <div class="flex-center text-center">
-                <!-- WARAP-->
+                <!-- Whatsapp-->
                 <a >
                 <a href="https://api.whatsapp.com/send?phone=542664748357" target="_blank"><i class="fab fa-whatsapp fa-lg text-white me-md-5 me-3 fa-2x"></a></i>
     
@@ -96,3 +127,7 @@
     
         </footer>
         <!--Fin footer-->
+
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
