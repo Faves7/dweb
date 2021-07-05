@@ -80,3 +80,21 @@ body{
     background-color: grey;
 }
 /*Fin contenedor*/
+
+/*Tamaño de imagenes de tarjetas*/
+.imagen-card{
+    width: 100%;
+    height: 375px;
+}
+.contenedor-cards{
+    margin-top: 2%;
+}
+
+/*Contenedor titulos de subpaginas*/
+.contenedor-titulos{
+    text-align: center;
+    font-style: italic;
+    border-bottom: solid black;
+    width: 95%;
+    margin-top: 1%;
+}
