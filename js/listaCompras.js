@@ -14,6 +14,14 @@ function agregarProducto(precio){
     monto.innerHTML = "Subtotal: <b>$" + subtotal + "</b>";
 }
 
+function irAFormulario(){
+    if(subtotal == 0){
+        alert("Debe seleccionar al menos un producto");
+    }else{
+        window.location.href = "../confirmaCompra.html";
+    }
+}
+
 function vaciarLista(){
     subtotal = 0;
     cant = 0;
