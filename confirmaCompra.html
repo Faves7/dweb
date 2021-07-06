@@ -58,11 +58,11 @@
   </header>
   <!--Fin de header-->
 
-   <section class="row">       
-       <div class="container">              
-           <div class="col-md-6">            
-            <form id="formulario-contacto" name="form" action="mailto:ventas@gmail.com" method="POST" enctype="text/plain">
-              <br><br><br><br><h5><b>Formulario de pago</b></h5>   
+   <section class="row mt-5">       
+       <div class="container" >              
+           <div class="container formulario bg-dark w-75 h-100">            
+            <form id="formulario-compra" name="form" action="mailto:ventas@gmail.com" method="POST" enctype="text/plain">
+              <h5><b>Formulario de pago</b></h5>   
                 <!-- input nombre -->
                 <div class="form-outline mb-4">
                   <input type="text" id="form4Example1" class="form-control" name="nombre" placeholder="Nombre y Apellido"/>
@@ -74,18 +74,22 @@
                     <label class="form-label" for="form4Example1">
                 </div>
                 
-                <label>Método de pago</label>
+                <label><b>Método de pago</b></label>
                 <br>
-                Efectivo<input type="radio" name="formaPago" value="1" style="margin-left: 1%;"><br>
-                <div class="form-outline mb-4">
-                    <input type="text" id="form4Example1" class="form-control" name="dir" placeholder="Ingrese direccion"/>
-                    <label class="form-label" for="form4Example1">
-                </div> 
-
-                Mercado Pago<input type="radio" name="formaPago" value="2" style="margin-left: 1%;"><br>
-                <a class="nav-link" href="https://www.mercadopago.com.ar/paid?code=V1C70X&utm_source=google&utm_medium=cpc&utm_campaign=MLA_MP_G_AO_ALL_BRD_SEARCH_MP_EXACT&matt_tool=28766038&matt_word=&gclid=CjwKCAjw_o-HBhAsEiwANqYhpycfN5_vxYydJb3mBvTcsKA9vi716oJ4N0b9XxeAC5QCMCcbPxxpthoCZq4QAvD_BwE">Ingresa a tu cuenta de Mercado Pago</a>
+                <input type="radio" name="formaPago" value="1" style="margin-left: 1%;"> Efectivo<br>
+                <input type="radio" name="formaPago" value="2" style="margin-left: 1%;"> Mercado Pago<br>
+                <a class="nav-link" href="https://www.mercadopago.com.ar/paid?code=V1C70X&utm_source=google&utm_medium=cpc&utm_campaign=MLA_MP_G_AO_ALL_BRD_SEARCH_MP_EXACT&matt_tool=28766038&matt_word=&gclid=CjwKCAjw_o-HBhAsEiwANqYhpycfN5_vxYydJb3mBvTcsKA9vi716oJ4N0b9XxeAC5QCMCcbPxxpthoCZq4QAvD_BwE">Ingresá a tu cuenta de Mercado Pago</a>
                 <br> <br>
+                
+                <label><b>Método de compra</b></label><br>
+                <input type="radio" name="formaVenta" value="1" style="margin-left: 1%;"> A domicilio<br>
+                <input type="radio" name="formaVenta" value="2" style="margin-left: 1%;"> Punto de encuentro<br><br>
 
+                <div class="form-outline mb-4">
+                  <input type="text" id="form4Example1" class="form-control" name="dir" placeholder="Ingrese direccion"/>
+                  <label class="form-label" for="form4Example1">
+                </div>             
+                
                 <h6><b>Monto a pagar:</b> <label id="montoConfirma"></label></h6>                       
               
                 <!-- botones enviar y borrar -->
