@@ -12,6 +12,7 @@
   <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
   <script src=""></script>
 	<title>Freyja Indumentaria - Formulario de Pago</title>
+  <link rel="shortcut icon" href="/Imagenes/logoPrincipal.png" />
 </head>
 
 <body>  
@@ -28,7 +29,7 @@
             <div class="collapse navbar-collapse lista-menu" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item active dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -57,15 +58,11 @@
   </header>
   <!--Fin de header-->
 
-   <section class="row">
-       <div class="container">
-           <div class="col-md-6">
-               <h5>Formulario de pago</h5>
-           </div>
-       </div>
-       <div class="container">
-           <div class="col-md-6">
+   <section class="row">       
+       <div class="container">              
+           <div class="col-md-6">            
             <form id="formulario-contacto" name="form" action="mailto:ventas@gmail.com" method="POST" enctype="text/plain">
+              <h5><b>Formulario de pago</b></h5>   
                 <!-- input nombre -->
                 <div class="form-outline mb-4">
                   <input type="text" id="form4Example1" class="form-control" name="nombre" placeholder="Nombre y Apellido"/>
@@ -77,7 +74,7 @@
                     <label class="form-label" for="form4Example1">
                 </div>
                 
-                <label>Metodo de pago</label>
+                <label>Método de pago</label>
                 <br>
                 Efectivo<input type="radio" name="formaPago" value="1" style="margin-left: 1%;"><br>
                 <div class="form-outline mb-4">
@@ -85,11 +82,11 @@
                     <label class="form-label" for="form4Example1">
                 </div> 
 
-                mercado Pago<input type="radio" name="formaPago" value="2" style="margin-left: 1%;"><br>
+                Mercado Pago<input type="radio" name="formaPago" value="2" style="margin-left: 1%;"><br>
                 <a class="nav-link" href="https://www.mercadopago.com.ar/paid?code=V1C70X&utm_source=google&utm_medium=cpc&utm_campaign=MLA_MP_G_AO_ALL_BRD_SEARCH_MP_EXACT&matt_tool=28766038&matt_word=&gclid=CjwKCAjw_o-HBhAsEiwANqYhpycfN5_vxYydJb3mBvTcsKA9vi716oJ4N0b9XxeAC5QCMCcbPxxpthoCZq4QAvD_BwE">Ingresa a tu cuenta de Mercado Pago</a>
                 <br> <br>
 
-                <h6>Monto a pagar: <label id="montoConfirma"></label></h6>                       
+                <h6><b>Monto a pagar:</b> <label id="montoConfirma"></label></h6>                       
               
                 <!-- botones enviar y borrar -->
                 <button type="button" id="btn-enviar" class="btn btn-primary btn-block mb-4" onclick="validarCompra();">Imprimir ticket</button>
@@ -110,7 +107,7 @@
           <div class="flex-center text-center">
             <!-- WARAP-->
             <a >
-            <a href="https://api.whatsapp.com/send?phone=542664748357" target="_blank"><i class="fab fa-whatsapp fa-lg text-white me-md-5 me-3 fa-2x"></a></i>
+            <a href="https://api.whatsapp.com/send?phone=542664112233" target="_blank"><i class="fab fa-whatsapp fa-lg text-white me-md-5 me-3 fa-2x"></a></i>
 
             <!--Instagram-->            
             <a href="https://www.instagram.com/freyja.vm/" target="_blank"><i class="fab fa-instagram fa-lg text-white me-md-5 me-3 fa-2x"></a></i>
