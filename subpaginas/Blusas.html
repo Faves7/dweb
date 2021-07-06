@@ -80,7 +80,7 @@
                   <h5 class="card-title">Blusa negra cuello v</h5>
                   <p class="card-text">Talle medio</p>
                   <h6><b>$500</b></h6>
-                  <a href="#!" class="btn btn-primary">Añadir al carro</a>
+                  <button type="button" class="btn btn-primary" onclick="agregarProducto('500');">Agregar producto</button>
                 </div>
               </div>
             </div>
@@ -99,7 +99,7 @@
                   <h5 class="card-title">Blusa lunares</h5>
                   <p class="card-text">Talle medio</p>
                   <h6><b>$650</b></h6>
-                  <a href="#!" class="btn btn-primary">Añadir al carro</a>
+                  <button type="button" class="btn btn-primary" onclick="agregarProducto('650');">Agregar producto</button>
                 </div>
               </div>
             </div>
@@ -118,7 +118,7 @@
                   <h5 class="card-title">Blusa strapless</h5>
                   <p class="card-text">Talle grande</p>
                   <h6><b>$400</b></h6>
-                  <a href="#!" class="btn btn-primary">Añadir al carro</a>
+                  <button type="button" class="btn btn-primary" onclick="agregarProducto('400');">Agregar producto</button>
                 </div>
               </div>
             </div>
@@ -137,7 +137,7 @@
                   <h5 class="card-title">Blusa bicolor</h5>
                   <p class="card-text">Talle grande</p>
                   <h6><b>$700</b></h6>
-                  <a href="#!" class="btn btn-primary">Añadir al carro</a>
+                  <button type="button" class="btn btn-primary" onclick="agregarProducto('700');">Agregar producto</button>
                 </div>
               </div>
             </div>
@@ -158,7 +158,7 @@
                 <h5 class="card-title">Maxi Blusa</h5>
                 <p class="card-text">Talle grande (hasta xxl)</p>
                 <h6><b>$700</b></h6>
-                <a href="#!" class="btn btn-primary">Añadir al carro</a>
+                <button type="button" class="btn btn-primary" onclick="agregarProducto('700');">Agregar producto</button>
               </div>
             </div>
           </div>
@@ -177,7 +177,7 @@
                 <h5 class="card-title">Blusa roja Halter</h5>
                 <p class="card-text">Talle grande</p>
                 <h6><b>$800</b></h6>
-                <a href="#!" class="btn btn-primary">Añadir al carro</a>
+                <button type="button" class="btn btn-primary" onclick="agregarProducto('800');">Agregar producto</button>
               </div>
             </div>
           </div>
@@ -196,7 +196,7 @@
                 <h5 class="card-title">Blusa</h5>
                 <p class="card-text">Talle grande</p>
                 <h6><b>$500</b></h6>
-                <a href="#!" class="btn btn-primary">Añadir al carro</a>
+                <button type="button" class="btn btn-primary" onclick="agregarProducto('500');">Agregar producto</button>
               </div>
             </div>
           </div>
@@ -215,14 +215,24 @@
                 <h5 class="card-title">Top cuello imperial</h5>
                 <p class="card-text">Talle medio</p>
                 <h6><b>$250</b></h6>
-                <a href="#!" class="btn btn-primary">Añadir al carro</a>
+                <button type="button" class="btn btn-primary" onclick="agregarProducto('250');">Agregar producto</button>
               </div>
             </div>
           </div>
         </div>
     </section>
     <!--Fin Contenido de blusas & tops-->
-
+    <!--Listado de compras-->
+    <section class="row">
+      <div class="col-12" style="color: black; font-size: large; margin-top: 1%; border-top: solid black;">
+        <h6 style="margin-left: 1%;">Cantidad de productos seleccionados</h6>
+        <label id="cantProductos" style="margin-left: 1%;">No se han seleccionado productos</label>
+        <h6 style="margin-left: 1%;"><label id="total">Subtotal: <b>$0</b></label></h6>
+      </div>
+    </section>
+    <button type="button" class="btn btn-primary" style="margin-left: 1%;">Comprar productos</button>
+    <button type="button" class="btn btn-primary" style="margin-left: 1%;" onclick="vaciarLista();">Vaciar Lista de Productos</button>
+    <!--Fin listado de compras-->
     <!--Footer-->
     <footer>
     
@@ -251,7 +261,7 @@
     
         </footer>
         <!--Fin footer-->
-
+    <script src="../js/listaCompras.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
