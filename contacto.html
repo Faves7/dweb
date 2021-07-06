@@ -15,77 +15,77 @@
 </head>
 
 <body>
-     <!--Header-->
-     <header>     
-        <nav class="navbar navbar-expand-lg navbar-light barra-navegacion">
-            <div class="container-fluid">
-                <a href="index.html"><img src="Imagenes/logoPrincipal.png" style="margin-left: 2%; border-radius: 5%;" width="120" height="65" class="d-inline-block align-text-top"></a>
-                <label id="letras-logo">Freyja <br> Indumentaria</label>
-               <!-- Logo de pagina -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse lista-menu" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Lo nuevo</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Catálogo
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="subpaginas/Blusas.html">Blusas y Tops</a></li>
-                      <li><a class="dropdown-item" href="subpaginas/Calzados.html">Calzado</a></li>
-                      <li><a class="dropdown-item" href="subpaginas/Remeras.html">Remeras</a></li>
-                      <li><a class="dropdown-item" href="subpaginas/Pantalones.html">Jeans</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="preguntas.html">Preguntas frecuentes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+      <!--Header-->
+    <header>     
+      <nav class="navbar navbar-expand-lg navbar-light barra-navegacion">
+          <div class="container-fluid">
+            <a href="index.html"><img src="Imagenes/logoPrincipal.png" style="margin-left: 2%; border-radius: 2%;" width="100" height="50" class="d-inline-block align-text-top"></a>
+              <label id="letras-logo">Freyja <br> Indumentaria</label>
+             <!-- Logo de pagina -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse lista-menu" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>                
+                <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Catálogo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="subpaginas/Blusas.html">Blusas y Tops</a></li>
+                    <li><a class="dropdown-item" href="subpaginas/Calzados.html">Calzado</a></li>
+                    <li><a class="dropdown-item" href="subpaginas/Remeras.html">Remeras</a></li>
+                    <li><a class="dropdown-item" href="subpaginas/Pantalones.html">Jeans</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="preguntas.html">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="nosotros.html">Nosotros</a>
+                </li>                
+                <li class="nav-item">
+                  <a class="nav-link active" href="contacto.html">Contacto</a>                  
+                </li>
+              </ul>
             </div>
-        </nav>
-    </header>
-    <!--Fin de header-->
+          </div>
+      </nav>
+  </header>
+  <!--Fin de header-->
     
     <!--Formulario de contacto-->
     <br><br><div class="row ps-5" >
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6">
-            <h3><b>Formulario de contacto</b></h3>
+            <h3><b>¡Contactanos!</b></h3>
             <div class="formulario bg-dark">
-            <form id="formulario-contacto">
+            <form id="formulario-contacto" name="form">
               <!-- input nombre -->
               <div class="form-outline mb-4">
-                <input type="text" id="form4Example1" class="form-control" placeholder="Nombre"/>
+                <input type="text" id="form4Example1" class="form-control" name="nombre" placeholder="Nombre"/>
                 <label class="form-label" for="form4Example1">
               </div>
             
               <!-- input Email -->
               <div class="form-outline mb-4">
-                <input type="email" id="form4Example2" class="form-control" placeholder="Email"/>
+                <input type="email" id="form4Example2" class="form-control" name="correo" placeholder="Email"/>
                 <label class="form-label" for="form4Example2">
               </div>
             
               <!-- input mensaje -->
               <div class="form-outline mb-4">
-                <textarea class="form-control" id="form4Example3" rows="4" placeholder="Ingrese su mensaje aquí"></textarea>
+                <textarea class="form-control" name="comentario" id="form4Example3" rows="4" placeholder="Ingrese su mensaje aquí"></textarea>
                 <label class="form-label" for="form4Example3">
               </div>
                      
             
               <!-- botones enviar y borrar -->
-              <button type="submit" id="btn-enviar" class="btn btn-primary btn-block mb-4">Enviar</button>
+              <button type="button" id="btn-enviar" class="btn btn-primary btn-block mb-4" onclick="validar();">Enviar</button>
               <button type="reset" id="btn-reset" class="btn btn-primary btn-block mb-4" onclick="alert('Se borraron los campos del formulario')">Borrar</button>
             </form>  
             </div>
@@ -127,7 +127,7 @@
     
         </footer>
         <!--Fin footer-->
-
+    <script src="js/contacto.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
