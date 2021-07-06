@@ -15,6 +15,8 @@ function agregarProducto(precio){
 }
 
 function vaciarLista(){
+    subtotal = 0;
+    cant = 0;
     cantProductos.innerHTML = "No se han seleccionado productos";
     monto.innerHTML = "Subtotal: <b>$0</b>";
 }

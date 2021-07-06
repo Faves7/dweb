@@ -17,43 +17,47 @@
 <body>
      <!--Header-->
      <header>     
-        <nav class="navbar navbar-expand-lg navbar-light barra-navegacion">
-            <div class="container-fluid">
-                <a href="../index.html"><img src="../Imagenes/logoPrincipal.png" style="margin-left: 2%; border-radius: 2%;" width="100" height="50" class="d-inline-block align-text-top"></a>
-                <label id="letras-logo">Freyja <br> Indumentaria</label>
-               <!-- Logo de pagina -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse lista-menu" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Catálogo
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="Blusas.html">Blusas y Tops</a></li>
-                      <li><a class="dropdown-item" href="Calzados.html">Calzado</a></li>
-                      <li><a class="dropdown-item" href="Remeras.html">Remeras</a></li>
-                      <li><a class="dropdown-item" href="Pantalones.html">Jeans</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../preguntas.html">Preguntas frecuentes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+      <nav class="navbar navbar-expand-lg navbar-light barra-navegacion">
+          <div class="container-fluid">
+            <a href="../index.html"><img src="../Imagenes/logoPrincipal.png" style="margin-left: 2%; border-radius: 2%;" width="100" height="50" class="d-inline-block align-text-top"></a>
+              <label id="letras-logo">Freyja <br> Indumentaria</label>
+             <!-- Logo de pagina -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse lista-menu" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>                
+                <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Catálogo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="Blusas.html">Blusas y Tops</a></li>
+                    <li><a class="dropdown-item" href="Calzados.html">Calzado</a></li>
+                    <li><a class="dropdown-item" href="Remeras.html">Remeras</a></li>
+                    <li><a class="dropdown-item" href="Pantalones.html">Pantalones</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../preguntas.html">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../nosotros.html">Nosotros</a>
+                </li>                
+                <li class="nav-item">
+                  <a class="nav-link active" href="../contacto.html">Contacto</a>                  
+                </li>
+              </ul>
             </div>
-        </nav>
-    </header>
-    <!--Fin de header-->
+          </div>
+      </nav>
+  </header>
+  <!--Fin de header-->
+  
+  
 
     <!--Contenido de Blusas & tops-->
     <section class="container-fluid">
@@ -222,10 +226,11 @@
         </div>
     </section>
     <!--Fin Contenido de blusas & tops-->
+    
     <!--Listado de compras-->
     <section class="row">
       <div class="col-12" style="color: black; font-size: large; margin-top: 1%; border-top: solid black;">
-        <h6 style="margin-left: 1%;">Cantidad de productos seleccionados</h6>
+        <br><h6 style="margin-left: 1%;"><b>Cantidad de productos seleccionados</b></h6>
         <label id="cantProductos" style="margin-left: 1%;">No se han seleccionado productos</label>
         <h6 style="margin-left: 1%;"><label id="total">Subtotal: <b>$0</b></label></h6>
       </div>
@@ -233,6 +238,7 @@
     <button type="button" class="btn btn-primary" style="margin-left: 1%;">Comprar productos</button>
     <button type="button" class="btn btn-primary" style="margin-left: 1%;" onclick="vaciarLista();">Vaciar Lista de Productos</button>
     <!--Fin listado de compras-->
+
     <!--Footer-->
     <footer>
     
@@ -244,7 +250,7 @@
               <div class="flex-center text-center">
                 <!-- WARAP-->
                 <a >
-                <a href="https://api.whatsapp.com/send?phone=542664748357" target="_blank"><i class="fab fa-whatsapp fa-lg text-white me-md-5 me-3 fa-2x"></a></i>
+                <a href="https://api.whatsapp.com/send?phone=542664112233" target="_blank"><i class="fab fa-whatsapp fa-lg text-white me-md-5 me-3 fa-2x"></a></i>
     
                 <!--Instagram-->            
                 <a href="https://www.instagram.com/freyja.vm/" target="_blank"><i class="fab fa-instagram fa-lg text-white me-md-5 me-3 fa-2x"></a></i>

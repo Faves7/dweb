@@ -15,99 +15,229 @@
 </head>
 
 <body>
-     <!--Header-->
-     <header>     
-        <nav class="navbar navbar-expand-lg navbar-light barra-navegacion">
-            <div class="container-fluid">
-                <a href="../index.html"><img src="../Imagenes/logoPrincipal.png" style="margin-left: 2%; border-radius: 5%;" width="120" height="65" class="d-inline-block align-text-top"></a>
-                <label id="letras-logo">Freyja <br> Indumentaria</label>
-               <!-- Logo de pagina -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse lista-menu" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Catálogo
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="Blusas.html">Blusas y Tops</a></li>
-                      <li><a class="dropdown-item" href="Calzados.html">Calzado</a></li>
-                      <li><a class="dropdown-item" href="Remeras.html">Remeras</a></li>
-                      <li><a class="dropdown-item" href="Pantalones.html">Jeans</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../preguntas.html">Preguntas frecuentes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../contacto.html">Contacto</a>
-                  </li>
-                </ul>
+    <!--Header-->
+    <header>     
+      <nav class="navbar navbar-expand-lg navbar-light barra-navegacion">
+          <div class="container-fluid">
+            <a href="../index.html"><img src="../Imagenes/logoPrincipal.png" style="margin-left: 2%; border-radius: 2%;" width="100" height="50" class="d-inline-block align-text-top"></a>
+              <label id="letras-logo">Freyja <br> Indumentaria</label>
+             <!-- Logo de pagina -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse lista-menu" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>                
+                <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Catálogo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="Blusas.html">Blusas y Tops</a></li>
+                    <li><a class="dropdown-item" href="Calzados.html">Calzado</a></li>
+                    <li><a class="dropdown-item" href="Remeras.html">Remeras</a></li>
+                    <li><a class="dropdown-item" href="Pantalones.html">Pantalones</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../preguntas.html">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../nosotros.html">Nosotros</a>
+                </li>                
+                <li class="nav-item">
+                  <a class="nav-link active" href="../contacto.html">Contacto</a>                  
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+  </header>
+  <!--Fin de header-->
+  
+
+   
+     <!--Contenido de Remeras-->
+     <section class="container-fluid">
+      <div class="row">
+          <div class="container contenedor-titulos">
+              <div class="col-12">
+                  <h4>Remeras</h4>
+              </div>
+          </div>
+      </div>
+      <div class="row"> 
+          <div class="col-md-3 contenedor-cards">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img
+                  src="../Imagenes/remeras/remera1.jpg"
+                  class="img-fluid imagen-card"
+                />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Remera Frida</h5>
+                <p class="card-text">Talle medio</p>
+                <h6><b>$300</b></h6>
+                <button type="button" class="btn btn-primary" onclick="agregarProducto('300');">Agregar producto</button>
               </div>
             </div>
-        </nav>
-    </header>
-    <!--Fin de header-->
+          </div>
+          <div class="col-md-3 contenedor-cards">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img
+                  src="../Imagenes/remeras/remera2.jpg"
+                  class="img-fluid imagen-card"
+                />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Remera Batik</h5>
+                <p class="card-text">Talle medio</p>
+                <h6><b>$650</b></h6>
+                <button type="button" class="btn btn-primary" onclick="agregarProducto('650');">Agregar producto</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 contenedor-cards">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img
+                  src="../Imagenes/remeras/remera3.jpg"
+                  class="img-fluid imagen-card"
+                />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Remera AC/DC</h5>
+                <p class="card-text">Talle medio</p>
+                <h6><b>$666</b></h6>
+                <button type="button" class="btn btn-primary" onclick="agregarProducto('666');">Agregar producto</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 contenedor-cards">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img
+                  src="../Imagenes/remeras/remera4.jpg"
+                  class="img-fluid imagen-card"
+                />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Remera One Saez</h5>
+                <p class="card-text">Talle medio</p>
+                <h6><b>$350</b></h6>
+                <button type="button" class="btn btn-primary" onclick="agregarProducto('350');">Agregar producto</button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 contenedor-cards">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img
+                src="../Imagenes/remeras/remera5.jpg"
+                class="img-fluid imagen-card"
+              />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Suéter crop</h5>
+              <p class="card-text">Talle medio</p>
+              <h6><b>$400</b></h6>
+              <button type="button" class="btn btn-primary" onclick="agregarProducto('400');">Agregar producto</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 contenedor-cards">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img
+                src="../Imagenes/remeras/remera6.jpg"
+                class="img-fluid imagen-card"
+              />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Saquito de lanilla calado</h5>
+              <p class="card-text">Talle medio</p>
+              <h6><b>$450</b></h6>
+              <button type="button" class="btn btn-primary" onclick="agregarProducto('450');">Agregar producto</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 contenedor-cards">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img
+                src="../Imagenes/remeras/remera7.jpg"
+                class="img-fluid imagen-card"
+              />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Remera Ramones</h5>
+              <p class="card-text">Talle medio</p>
+              <h6><b>$400</b></h6>
+              <button type="button" class="btn btn-primary" onclick="agregarProducto('400');">Agregar producto</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 contenedor-cards">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img
+                src="../Imagenes/remeras/remera8.jpg"
+                class="img-fluid imagen-card"
+              />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Remera rosa con mariposas</h5>
+              <p class="card-text">Talle medio</p>
+              <h6><b>$250</b></h6>
+              <button type="button" class="btn btn-primary" onclick="agregarProducto('250');">Agregar producto</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!--Fin Contenido de Remeras-->
 
-    <!--Contenido de calzado-->
-    <section class="container-fluid">
-        <div class="row">
-            <div class="container">
-                <div class="col-12">
-                    <h3>Remeras</h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card " style="width: 18rem;">
-                    <img src="../Imagenes/calzado/calzado1.jpg" class="card-img-top" alt="imagen-calzado">
-                    <div class="card-body">
-                        <h5 class="card-title">Zapatos Cuero Talle 38</h5>
-                        <p class="card-text">$1400</p>
-                        <a href="#" class="btn btn-primary">Añadir al carro</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card " style="width: 18rem;">
-                    <img src="../Imagenes/calzado/calzado2.jpg" class="card-img-top" alt="imagen-calzado">
-                    <div class="card-body">
-                        <h5 class="card-title">Sandalias Marca Prune</h5>
-                        <p class="card-text">$2200</p>
-                        <a href="#" class="btn btn-primary">Añadir al carro</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card " style="width: 18rem;">
-                    <img src="../Imagenes/calzado/calzado3.jpg" class="card-img-top" alt="imagen-calzado">
-                    <div class="card-body">
-                        <h5 class="card-title">Sandalia</h5>
-                        <p class="card-text">$800</p>
-                        <a href="#" class="btn btn-primary">Añadir al carro</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card " style="width: 18rem;">
-                    <img src="../Imagenes/calzado/calzado4.jpg" class="card-img-top" alt="imagen-calzado">
-                    <div class="card-body">
-                        <h5 class="card-title">Zapatos Flecos Talle 39-40</h5>
-                        <p class="card-text">$1100</p>
-                        <a href="#" class="btn btn-primary">Añadir al carro</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Fin Contenido de calzado-->
+  <!--Listado de compras-->
+  <section class="row">
+    <div class="col-12" style="color: black; font-size: large; margin-top: 1%; border-top: solid black;">
+      <br><h6 style="margin-left: 1%;"><b>Cantidad de productos seleccionados</b></h6>
+      <label id="cantProductos" style="margin-left: 1%;">No se han seleccionado productos</label>
+      <h6 style="margin-left: 1%;"><label id="total">Subtotal: <b>$0</b></label></h6>
+    </div>
+  </section>
+  <button type="button" class="btn btn-primary" style="margin-left: 1%;">Comprar productos</button>
+  <button type="button" class="btn btn-primary" style="margin-left: 1%;" onclick="vaciarLista();">Vaciar Lista de Productos</button>
+  <!--Fin listado de compras-->
 
     <!--Footer-->
     <footer>
@@ -120,7 +250,7 @@
               <div class="flex-center text-center">
                 <!-- WARAP-->
                 <a >
-                <a href="https://api.whatsapp.com/send?phone=542664748357" target="_blank"><i class="fab fa-whatsapp fa-lg text-white me-md-5 me-3 fa-2x"></a></i>
+                <a href="https://api.whatsapp.com/send?phone=542664112233" target="_blank"><i class="fab fa-whatsapp fa-lg text-white me-md-5 me-3 fa-2x"></a></i>
     
                 <!--Instagram-->            
                 <a href="https://www.instagram.com/freyja.vm/" target="_blank"><i class="fab fa-instagram fa-lg text-white me-md-5 me-3 fa-2x"></a></i>
@@ -139,5 +269,6 @@
         <!--Fin footer-->
 
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/listaCompras.js"></script>
 </body>
 </html>

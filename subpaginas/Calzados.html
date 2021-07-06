@@ -15,48 +15,51 @@
 </head>
 
 <body>
-     <!--Header-->
-     <header>     
-        <nav class="navbar navbar-expand-lg navbar-light barra-navegacion">
-            <div class="container-fluid">
-                <a href="../index.html"><img src="../Imagenes/logoPrincipal.png" style="margin-left: 2%; border-radius: 2%;" width="100" height="50" class="d-inline-block align-text-top"></a>
-                <label id="letras-logo">Freyja <br> Indumentaria</label>
-               <!-- Logo de pagina -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse lista-menu" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Catálogo
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="Blusas.html">Blusas y Tops</a></li>
-                      <li><a class="dropdown-item" href="Calzados.html">Calzado</a></li>
-                      <li><a class="dropdown-item" href="Remeras.html">Remeras</a></li>
-                      <li><a class="dropdown-item" href="Pantalones.html">Jeans</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../preguntas.html">Preguntas frecuentes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+    <!--Header-->
+    <header>     
+      <nav class="navbar navbar-expand-lg navbar-light barra-navegacion">
+          <div class="container-fluid">
+            <a href="../index.html"><img src="../Imagenes/logoPrincipal.png" style="margin-left: 2%; border-radius: 2%;" width="100" height="50" class="d-inline-block align-text-top"></a>
+              <label id="letras-logo">Freyja <br> Indumentaria</label>
+             <!-- Logo de pagina -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse lista-menu" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>                
+                <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Catálogo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="Blusas.html">Blusas y Tops</a></li>
+                    <li><a class="dropdown-item" href="Calzados.html">Calzado</a></li>
+                    <li><a class="dropdown-item" href="Remeras.html">Remeras</a></li>
+                    <li><a class="dropdown-item" href="Pantalones.html">Pantalones</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../preguntas.html">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../nosotros.html">Nosotros</a>
+                </li>                
+                <li class="nav-item">
+                  <a class="nav-link active" href="../contacto.html">Contacto</a>                  
+                </li>
+              </ul>
             </div>
-        </nav>
-    </header>
-    <!--Fin de header-->
+          </div>
+      </nav>
+  </header>
+  <!--Fin de header-->
+  
 
-    <!--Contenido de calzado-->
-    <section class="container-fluid">
+     <!--Contenido de Calzado-->
+     <section class="container-fluid">
       <div class="row">
           <div class="container contenedor-titulos">
               <div class="col-12">
@@ -77,10 +80,10 @@
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Blusa negra cuello v</h5>
-                <p class="card-text">Talle medio</p>
-                <h6><b>$500</b></h6>
-                <a href="#!" class="btn btn-primary">Añadir al carro</a>
+                <h5 class="card-title">Zapatos color negro</h5>
+                <p class="card-text">Talle 39</p>
+                <h6><b>$750</b></h6>
+                <button type="button" class="btn btn-primary" onclick="agregarProducto('750');">Agregar producto</button>
               </div>
             </div>
           </div>
@@ -96,10 +99,10 @@
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Blusa lunares</h5>
-                <p class="card-text">Talle medio</p>
-                <h6><b>$650</b></h6>
-                <a href="#!" class="btn btn-primary">Añadir al carro</a>
+                <h5 class="card-title">Sandalias color negro</h5>
+                <p class="card-text">Talle 36</p>
+                <h6><b>$999</b></h6>
+                <button type="button" class="btn btn-primary" onclick="agregarProducto('999');">Agregar producto</button>
               </div>
             </div>
           </div>
@@ -115,10 +118,10 @@
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Blusa strapless</h5>
-                <p class="card-text">Talle grande</p>
+                <h5 class="card-title">Sandilas color rosa</h5>
+                <p class="card-text">Talle 35</p>
                 <h6><b>$400</b></h6>
-                <a href="#!" class="btn btn-primary">Añadir al carro</a>
+                <button type="button" class="btn btn-primary" onclick="agregarProducto('400');">Agregar producto</button>
               </div>
             </div>
           </div>
@@ -134,16 +137,106 @@
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Blusa bicolor</h5>
-                <p class="card-text">Talle grande</p>
-                <h6><b>$700</b></h6>
-                <a href="#!" class="btn btn-primary">Añadir al carro</a>
+                <h5 class="card-title">Zapato blanco</h5>
+                <p class="card-text">Talle 37</p>
+                <h6><b>$1200</b></h6>
+                <button type="button" class="btn btn-primary" onclick="agregarProducto('1200');">Agregar producto</button>
               </div>
             </div>
           </div>
       </div>
+      <div class="row">
+        <div class="col-md-3 contenedor-cards">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img
+                src="../Imagenes/calzado/calzado5.jpg"
+                class="img-fluid imagen-card"
+              />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Bota color negro</h5>
+              <p class="card-text">Talle 37</p>
+              <h6><b>$1500</b></h6>
+              <button type="button" class="btn btn-primary" onclick="agregarProducto('1500');">Agregar producto</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 contenedor-cards">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img
+                src="../Imagenes/calzado/calzado6.jpg"
+                class="img-fluid imagen-card"
+              />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Zapato color negro</h5>
+              <p class="card-text">Talle 36</p>
+              <h6><b>$800</b></h6>
+              <button type="button" class="btn btn-primary" onclick="agregarProducto('800');">Agregar producto</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 contenedor-cards">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img
+                src="../Imagenes/calzado/calzado7.jpg"
+                class="img-fluid imagen-card"
+              />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Zapato color negro</h5>
+              <p class="card-text">Talle 35</p>
+              <h6><b>$750</b></h6>
+              <button type="button" class="btn btn-primary" onclick="agregarProducto('750');">Agregar producto</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 contenedor-cards">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img
+                src="../Imagenes/calzado/calzado8.jpg"
+                class="img-fluid imagen-card"
+              />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Sandalias color negro con detalles</h5>
+              <p class="card-text">Talle 36</p>
+              <h6><b>$550</b></h6>
+              <button type="button" class="btn btn-primary" onclick="agregarProducto('550');">Agregar producto</button>
+            </div>
+          </div>
+        </div>
+      </div>
   </section>
-  <!--Fin Contenido de calzado-->
+  <!--Fin Contenido Calzado-->
+
+  <!--Listado de compras-->
+  <section class="row">
+    <div class="col-12" style="color: black; font-size: large; margin-top: 1%; border-top: solid black;">
+      <br><h6 style="margin-left: 1%;"><b>Cantidad de productos seleccionados</b></h6>
+      <label id="cantProductos" style="margin-left: 1%;">No se han seleccionado productos</label>
+      <h6 style="margin-left: 1%;"><label id="total">Subtotal: <b>$0</b></label></h6>
+    </div>
+  </section>
+  <button type="button" class="btn btn-primary" style="margin-left: 1%;">Comprar productos</button>
+  <button type="button" class="btn btn-primary" style="margin-left: 1%;" onclick="vaciarLista();">Vaciar Lista de Productos</button>
+  <!--Fin listado de compras-->
 
     <!--Footer-->
     <footer>
@@ -156,7 +249,7 @@
               <div class="flex-center text-center">
                 <!-- WARAP-->
                 <a >
-                <a href="https://api.whatsapp.com/send?phone=542664748357" target="_blank"><i class="fab fa-whatsapp fa-lg text-white me-md-5 me-3 fa-2x"></a></i>
+                <a href="https://api.whatsapp.com/send?phone=542664112233" target="_blank"><i class="fab fa-whatsapp fa-lg text-white me-md-5 me-3 fa-2x"></a></i>
     
                 <!--Instagram-->            
                 <a href="https://www.instagram.com/freyja.vm/" target="_blank"><i class="fab fa-instagram fa-lg text-white me-md-5 me-3 fa-2x"></a></i>
@@ -175,5 +268,6 @@
         <!--Fin footer-->
 
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/listaCompras.js"></script>
 </body>
 </html>
