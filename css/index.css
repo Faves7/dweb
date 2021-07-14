@@ -121,3 +121,11 @@ body{
     border-bottom: solid black;
     width: 95%;
 }
+
+/*Imagenes carousel*/
+.slide{
+    margin-top: 10px;
+}
+.slide img{
+    height: 65vw;
+}
